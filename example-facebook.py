@@ -17,6 +17,7 @@ if __name__ == "__main__":
 
     # Plot
     plt.figure(figsize=(20,20))
+    plt.gca().set_facecolor('k')
     nx.draw_networkx_nodes(G, positions, node_size=5, node_color='w', alpha=0.4)
     plt.gca().add_collection(lc)
     plt.tick_params(axis='both',which='both',bottom=False,left=False,labelbottom=False,labelleft=False)
